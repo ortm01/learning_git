@@ -1,6 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://artem:1234@localhost:5432/mydb')
+#lest go
 query = """
 SELECT 
     name,
@@ -14,7 +15,10 @@ SELECT
 FROM stafs
 WHERE dept_id IS NOT NULL;
 """
+#ffffffffffffffff
+#fffffffffffffff
 df = pd.read_sql(query, engine)
 print(df)
+#fffffffffffffffffffaaa
 print('='*30)
 print(df[df['salary'] > 3000])
