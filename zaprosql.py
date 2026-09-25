@@ -21,3 +21,4 @@ df = pd.read_sql(query, engine)
 print(df)
 print('='*30)
 print(df[df['salary'] > 3000])
+#spravka with github 
