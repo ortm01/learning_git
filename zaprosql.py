@@ -15,10 +15,9 @@ SELECT
 FROM stafs
 WHERE dept_id IS NOT NULL;
 """
-#ffffffffffffffff
-#fffffffffffffff
+#this for merge
+#000000000000
 df = pd.read_sql(query, engine)
 print(df)
-#fffffffffffffffffffaaa
 print('='*30)
 print(df[df['salary'] > 3000])
